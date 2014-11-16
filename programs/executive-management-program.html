@@ -1,0 +1,32 @@
+---
+layout: default
+title: Executive Management Program
+permalink: /programs/executive-management-program/
+---
+
+{% assign program = site.data.programs.emp %}
+
+
+
+
+<div class="program-information">
+        <div data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
+
+    </dl>
+</div>
+    <div data-magellan-destination="intro">
+        <h3>Introduction</h3>
+        <p>{{ program.introduction | markdownify }}</p>
+
+        <h3>Participant Profiles</h3>
+        <h4>Capacity: {{ program.participants.capacity }}</h4>
+        <ul>
+            {% for profile in program.participants.profiles %}
+            <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
