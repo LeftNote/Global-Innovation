@@ -6,27 +6,46 @@ permalink: /programs/executive-management-program/
 
 {% assign program = site.data.programs.emp %}
 
-
-
-
 <div class="program-information">
-        <div data-magellan-expedition="fixed">
-      <dl class="sub-nav">
-        <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
-
-    </dl>
-</div>
-    <div data-magellan-destination="intro">
-        <h3>Introduction</h3>
-        <p>{{ program.introduction | markdownify }}</p>
-
-        <h3>Participant Profiles</h3>
-        <h4>Capacity: {{ program.participants.capacity }}</h4>
-        <ul>
-            {% for profile in program.participants.profiles %}
-            <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
-            {% endfor %}
-        </ul>
+    <div data-magellan-expedition="fixed">
+        <dl class="sub-nav">
+            <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
+            <dd data-magellan-arrival="participants"><a href="#participants">Participant Profiles</a></dd>
+            <dd data-magellan-arrival="fees"><a href="#fees">Fees</a></dd>
+            <dd data-magellan-arrival="schedule"><a href="#schedule">Schedule</a></dd>
+        </dl>
     </div>
-</div>
 
+
+    <!-- Program introduction -->
+    <a name="intro"></a>
+    <h3 data-magellan-destination="intro">Introduction</h3>
+    <p>{{ program.introduction | markdownify }}</p>
+
+    <!-- Participants profile section -->
+    <a name="participants"></a>
+    <h3 data-magellan-destination="participants" >Participant Profiles</h3>
+    <h4>Capacity: {{ program.participants.capacity }}</h4>
+    <ul>
+        {% for profile in program.participants.profiles %}
+            <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Fees section -->
+    <a name="fees"></a>
+    <h3 data-magellan-destination="fees">Fees</h3>
+    <p>{{ program.fees.before }}</p>
+    <p>Fee: {{ program.fees.fee }}</p>
+    <ul>
+        {% for fee_item in program.fees.items %}
+            <li>{{ fee_item }}</li>
+        {% endfor %}
+    </ul>
+    <p>{{ program.fees.after }}</p>
+
+    <!-- Schedule section, image only -->
+    <a name="schedule"></a>
+    <h3 data-magellan-destination="schedule">Schedule</h3>
+    <img src="/assets/program_info/{{ program.schedule_image }}">
+</div>

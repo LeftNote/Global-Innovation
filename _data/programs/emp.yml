@@ -30,7 +30,10 @@ participants:
           description: participants are looking to shape the future of their organizaiton. The program provides support on an intensive week of skills, framworks, and networks.
 
 
-program_fees:
+fees:
+    before: After we finalize the schedule and topics, we will provide program fee per person. The program fee includes the followings and it’s subject to change.
+    after: 
+    fee: TBD
     items:
         - Materials for information session , workshops, and or lecture
         - Airport transfer for arrival and departure (includes driver tip)
@@ -42,20 +45,4 @@ program_fees:
         - Translator (We can include translator into the program based on client’s request)
         - Group assistant
 
-schedule:
-    before: |
-        The program will adopt a wide variety of learning methods including lectures, small group discussions, coaching, case studies, guest speakers, corporate site visits and others.
-        
-        Below is a detailed breakdown of each day in the program: 
-    after: Participants emerge from the program with their own opportunity assessment toolkit and personal Venture Delivery Roadmap to begin launching a new project immediately.
-    days:
-        - name: Day 1
-          description: The theme is “Silicon Valley Lessons for Corporations”. We will review the history of the Valley, touching on its most important milestones and accomplishments. We will teach participants how to approach innovation as a process with clear roles and responsibilities and how to design an organizational structure and culture that fosters creativity and risk taking.
-        - name: Day 2
-          description: These sessions will focus on open innovation—a term coined by Berkeley- Haas Professor Henry Chesbrough—and how to use innovation to create new product subcategories that will make your competitors irrelevant. The site visit will be to a large technology firm that has used open innovation with success.
-        - name: Day 3
-          description: This is the first of three days focused on corporate entrepreneurship, looking at the mindset, skills and tools needed to build a business within a corporation. This session looks at the need for strategic alignment, as well as the challenges and obstacles to corporate entrepreneurship
-        - name: Day 4
-          description: This session focuses on getting the right stakeholders on board to your initiative. We look at how to obtain visible sponsorship and support from the executive team, determining how much autonomy you should obtain, and how to develop and refine your pitch.
-        - name: Day 5
-          description: On this final day, we will examine execution – how to make it happen. Topics include creating the culture to launch and sustain your venture, determining the business model, and understanding the degree of collaboration with and separation from the corporation that you need to achieve.
+schedule_image: emp_schedule.png
