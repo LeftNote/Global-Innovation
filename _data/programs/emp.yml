@@ -1,17 +1,37 @@
+--- 
+deadlines: 
+  after: "This is where \"after\" text goes."
+  application: "no deadline"
+  before: "This is where \"before\" text goes."
+  payment: "no deadline"
+fees: 
+  after: "This is where \"after\" text goes."
+  before: "After we finalize the schedule and topics, we will provide program fee per person. The program fee includes the followings and it’s subject to change."
+  fee: TBD
+  items: 
+    - "Materials for information session , workshops, and or lecture"
+    - "Airport transfer for arrival and departure (includes driver tip)"
+    - "Academic field trip"
+    - Meals
+    - "Certificates of Completion"
+    - "Staffs for program planning and implementation"
+    - "Hotel accommodation"
+    - "Translator (We can include translator into the program based on client’s request)"
+    - "Group assistant"
 introduction: |
     The Univesrity of California, Berkeley is known as an inoovator in business. UC Bekreley is a world-recognized leader in breaking down industry and academic boundaries and developing dynamic, multi- disciplinary approaches to solving complex business and societal challenges. This program will serve as a hub for brining together industry, research, and academics.
-
+    
     Program creates an environment for participants and faculty to collaborate on new content and dynamic ways of learning, networking, and ultimately transforming all program members. We can work with clients to determine specific outcomes, topic areas and methods of teaching best suited to the participants and their goals, including developing new management and leadership capabilities, cross-functional experties or leading organizaitonal change.
-
-
+    
+    
     In today’s globalized, fast-changing economy, every organization must innovate to grow. But successful innovation goes beyond idea generation. New initiatives must directly translate into value -- for customers, investors and even your own employees. Corporate executives must do all the things startup entrepreneurs do in terms of opportunity screening, assembling a team, developing prototype solutions and customer development.
-
+    
     The challenge is doing these activities within the confines of large institutions where it can be difficult to navigate longstanding paradigms, financial hurdles or talent gaps. Leading corporate venture creation requires a different kind of entrepreneurial spirit and the confidence to navigate and operationalize within organizational paradigms.
-
+    
     This intensive, 5-day program brings your participants inside the world’s premier innovation ecosystem, Silicon Valley, to learn lessons on innovation and corporate entrepreneurship. The program addresses the fundamental intersection of innovation, entrepreneurship and corporate strategy. Participants will leave with their own opportunity assessment toolkit and a personal roadmap to launch new, profitable ventures within their firms.
-
+    
     Key learning objectives include:
-
+    
     - Understanding the Silicon Valley model and how its unique ecosystem fosters innovation and entrepreneurship
     - Establishing a culture of innovation within your own organization
     - Leveraging open innovation to accelerate innovation in your enterprise
@@ -20,29 +40,24 @@ introduction: |
     - Building enthusiasm and buy-in from internal stakeholder and the C-suite
     - Forging external reciprocal business partnerships to infuse new talent and ideas
     - Creating teams with the right blend of individuals and skills to successfully launch a venture
-
-participants:
-    capacity: 40
-    profiles:
-        - name: High-Potentials
-          description: Cohorts of high-potential managers at companies that want to build a base of innovative skills, mindsets, and behaviors and cascade it through the organization.
-        - name: Executive MBA students
-          description: participants are looking to shape the future of their organizaiton. The program provides support on an intensive week of skills, framworks, and networks.
-
-
-fees:
-    before: After we finalize the schedule and topics, we will provide program fee per person. The program fee includes the followings and it’s subject to change.
-    after: 
-    fee: TBD
-    items:
-        - Materials for information session , workshops, and or lecture
-        - Airport transfer for arrival and departure (includes driver tip)
-        - Academic field trip
-        - Meals
-        - Certificates of Completion
-        - Staffs for program planning and implementation
-        - Hotel accommodation
-        - Translator (We can include translator into the program based on client’s request)
-        - Group assistant
-
-schedule_image: emp_schedule.png
+participant_profiles: 
+  after: "This is where \"after\" text goes."
+  before: "This is where \"before\" text goes."
+  profiles: 
+    - 
+      description: "Cohorts of high-potential managers at companies that want to build a base of innovative skills, mindsets, and behaviors and cascade it through the organization."
+      name: High-Potentials
+    - 
+      description: "participants are looking to shape the future of their organizaiton. The program provides support on an intensive week of skills, framworks, and networks."
+      name: "Executive MBA students"
+program_topics: 
+  after: "This is where \"after\" text goes."
+  before: "This is where \"before\" text goes."
+  topics: 
+    - 
+      description: "no description"
+      name: "no topic"
+schedule: 
+  after: "This is where \"after\" text goes."
+  before: "This is where \"before\" text goes."
+  image: emp_schedule.png

@@ -10,9 +10,11 @@ permalink: /programs/executive-management-program/
     <div data-magellan-expedition="fixed">
         <dl class="sub-nav">
             <dd data-magellan-arrival="intro"><a href="#intro">Introduction</a></dd>
+            <dd data-magellan-arrival="topics"><a href="#topics">Topics</a></dd>
             <dd data-magellan-arrival="participants"><a href="#participants">Participant Profiles</a></dd>
             <dd data-magellan-arrival="fees"><a href="#fees">Fees</a></dd>
             <dd data-magellan-arrival="schedule"><a href="#schedule">Schedule</a></dd>
+            <dd data-magellan-arrival="deadlines"><a href="#deadlines">Deadlines</a></dd>
         </dl>
     </div>
 
@@ -22,15 +24,27 @@ permalink: /programs/executive-management-program/
     <h3 data-magellan-destination="intro">Introduction</h3>
     <p>{{ program.introduction | markdownify }}</p>
 
+    <!-- Program Topics -->
+    <a name="topics"></a>
+    <h3 data-magellan-destination="topics">Program Topics</h3>
+    <p>{{ program.program_topics.before }}</p>
+    <ul>
+        {% for topic in program.program_topics.topics %}
+            <li><strong>{{ topic.name }}</strong>: {{ topic.description }}</li>
+        {% endfor %}
+    </ul>
+    <p>{{ program.program_topics.after }}</p>
+
     <!-- Participants profile section -->
     <a name="participants"></a>
     <h3 data-magellan-destination="participants" >Participant Profiles</h3>
-    <h4>Capacity: {{ program.participants.capacity }}</h4>
+    <p>{{ program.participant_profiles.before }}</p>
     <ul>
-        {% for profile in program.participants.profiles %}
+        {% for profile in program.participant_profiles.profiles %}
             <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
         {% endfor %}
     </ul>
+    <p>{{ program.participant_profiles.after }}</p>
 
     <!-- Fees section -->
     <a name="fees"></a>
@@ -44,8 +58,17 @@ permalink: /programs/executive-management-program/
     </ul>
     <p>{{ program.fees.after }}</p>
 
-    <!-- Schedule section, image only -->
+    <!-- Schedule section -->
     <a name="schedule"></a>
     <h3 data-magellan-destination="schedule">Schedule</h3>
-    <img src="/assets/program_info/{{ program.schedule_image }}">
+    <p>{{ program.schedule.before }}</p>
+    <img src="/assets/program_info/{{ program.schedule.image }}">
+    <p>{{ program.schedule.after }}</p>
+
+    <a name="deadlines"></a>
+    <h3 data-magellan-destination="deadlines">Deadlines</h3>
+    <p>{{ program.deadlines.before }}</p>
+    <p><strong>Application Deadline: </strong>: {{ program.deadlines.application }} </p>
+    <p><strong>Payment Deadline: </strong>: {{ program.deadlines.payment }} </p>
+    <p>{{ program.deadlines.after }}</p>
 </div>
