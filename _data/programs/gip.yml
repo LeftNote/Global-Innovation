@@ -39,19 +39,19 @@ program_topics:
   topics: 
     - 
       description: "This course focuses on the central role operations plays in a company's success, and the analytic tools that are required for strong managerial decision-making. The course emphasizes the strategic advantages provided by the operations function to strong organizations. Students will be exposed to such topics as operations strategies, supply chains, process design and analysis, lean manufacturing, Six Sigma, and other approaches to managing quality."
-      topic: "Business Operations"
+      name: "Business Operations"
     - 
       description: "In this hands-on course, an organizational model for understanding internationalization is defined. Students will compare the internationalization processes of three organization types: the mass production organization; the disaggregated production organization; and the project- based organization. Each organization type responds differently to critical elements of the internationalization process, namely, the focus of entry, the degree of presence and physical presence requirements in the foreign market, which in turn influence what modal forms, are adopted as the process progresses. Lastly, students will observe different approaches to resource commitment in the foreign market over time."
-      topic: "Organizational Internationalization"
+      name: "Organizational Internationalization"
     - 
       description: "Recent demands on organizations to be flexible, agile, and responsive to the marketplace and global economy have highlighted the need for organizational transformation and change. Leaders play a major role in the success of these programs. When a leader lacks the ability to exhibit effective behaviors during an organizational change effort, they can waste significant time, money, and energy and unnecessarily burden employees. Using a highly interactive, team-based, and competitive format that is sure to facilitate the sharing of knowledge, we explore a number of leadership-based factors impacting the success of both large- and small- scale organizational transformation and change programs."
-      topic: "Organizational Transformation"
+      name: "Organizational Transformation"
     - 
       description: "This course explores the complex environment in which international marketing operations are carried out, including the influence of market size; regional trade; social, cultural, legal and political dimensions; market entry strategies; branding and pricing decisions; market channels and other tactics for effective international marketing. Special attention is paid to the experiences of multinationals based in developed countries, but operating in developing countries."
-      topic: "International Marketing"
+      name: "International Marketing"
     - 
       description: "Operations strategy can be distinguished from business strategy by its focus on executing the business strategy and delivering the value proposition. This course provides frameworks to analyze strategic issues in manufacturing and service operations and to study the relationships between companies and their suppliers, customers, and competitors. Students will develop skills to optimize the operational processes used to design, produce, distribute, and deliver goods and services."
-      topic: "Business Operational Strategy"
+      name: "Business Operational Strategy"
 schedule: 
   after: "*Please note this schedule is subject to change. We will finalize the program topic selection then finalize the schedule."
   before: "This is where \"before\" text goes."
