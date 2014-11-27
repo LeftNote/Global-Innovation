@@ -13,6 +13,7 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/splash.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/typed.css" />
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
 
@@ -27,9 +28,9 @@
 		<div class="mini-container main-mini-container">
 			<div class="title">
 				<a href="#top" class="scroll img-link"><img class="logo" src="assets/images/gilogowhite.png" alt="Hue" /></a>
-				<h1>Coming Soon.</h1>
+				<h1><span class="typed"></span></h1>
 				<p>Our brand new site is almost ready to launch.<br />Please check back later or read more about us below.</p>
-				<a href="#aboutsection" class="scroll down-link"><i class="fa fa-arrow-circle-down"></i></a>
+				<a href="/home/"><i class="fa fa-arrow-circle-right"></i>See All Programs</a>
 			</div>
 		</div>
 		<div class="videoMuteButton" onclick="$('#bgndVideo').toggleVolume(); $('.videoButton.notmuted').toggleClass('mute');">
@@ -38,40 +39,6 @@
 		</div>					
 	</div>		
 	<!-- END MAIN -->
-
-<!-- BEGIN ABOUT -->
-<div class="section aboutsection">
-	<div class="mini-container">
-		<h2 class="coloured-h2">About Us.</h2>
-		<p>Global Innovation hosts a variety of programs centered around innovation.  We believe innovation is what drives the future and seek to provide aspiring individuals with experiences that will deepen understanding and broaden views.</p>
-		<div class="about-container">
-			<div class="about-box">
-				<div class="about-box-text">
-					<span class="about-logo"><i class="fa fa-support fa-fw"></i></span>
-					<h3>Innovation</h3>
-					<p>Our programs emphasize innovative thinking and encourage participants to explore novel ideas.</p>
-				</div>
-			</div>
-			<div class="about-box-spacer"></div>
-			<div class="about-box">
-				<div class="about-box-text">
-					<span class="about-logo"><i class="fa fa-tint fa-fw"></i></span>
-					<h3>Experience</h3>
-					<p>Our programs are hosted by establishments with years of histtory and experience to ensure that each program is thorough and rewarding.</p>
-				</div>
-			</div>
-			<div class="about-box-spacer"></div>
-			<div class="about-box">
-				<div class="about-box-text">
-					<span class="about-logo"><i class="fa fa-magic fa-fw"></i></span>
-					<h3>Diveristy</h3>
-					<p>We encourage those of all backgrounds to apply to our programs and improve their understanding of a variety of fields.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END ABOUT -->
 
 
 <!-- BEGIN FOOTER -->
@@ -120,15 +87,33 @@
 
 <!-- All set up / customisation variables for slideshow and video background etc. in custom.js file -->
 <script src="/assets/js/vendor/jquery.js" type="application/javascript"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/splash/custom.js"></script>
 
-<script type="text/javascript" src="assets/js/countdown.js"></script>
-<script type="text/javascript" src="assets/js/emailsubscribe.js"></script>
-<script type="text/javascript" src="assets/js/contact.js"></script>
-<script type="text/javascript" src="assets/js/hue.js"></script>
-<script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
-<script type="text/javascript" src="assets/js/placeholders.min.js"></script>
+<script type="text/javascript" src="assets/js/splash/countdown.js"></script>
+<script type="text/javascript" src="assets/js/splash/emailsubscribe.js"></script>
+<script type="text/javascript" src="assets/js/splash/contact.js"></script>
+<script type="text/javascript" src="assets/js/splash/hue.js"></script>
+<script type="text/javascript" src="assets/js/splash/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="assets/js/splash/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="assets/js/splash/placeholders.min.js"></script>
+<script type="text/javascript" src="assets/js/splash/typed.js"></script>
+<script>
+  $(function(){
+      $(".typed").typed({
+        strings: [
+        "Innovative.", 
+        "Diverse.", 
+        "Professional",
+        "Transformative",
+        "Global."
+        ],
+        typeSpeed: 100,
+        startDelay: 1000,
+        backSpeed: 80,
+        loop: true
+      });
+  });
+</script>
 
 
 <script type="text/javascript">
