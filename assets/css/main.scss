@@ -23,11 +23,20 @@
 @import "settings",
         "foundation",
         "home",
-        "programs"
+        "program"
 ;
 
 .programs {
 	color: #657aa8 !important;
+}
+
+.side-nav {
+	position: fixed;
+	max-width: 200px;
+}
+
+#globelogo {
+	margin: 0px 0px 10px 0px;
 }
 
 #main-side-nav {

@@ -7,7 +7,7 @@ gloinno.com
 Git Workflow Guideline
 ======================
 
-For version control, RoomForward Core uses a simplified version of the famous [Gitflow Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow), (you can read the original article [here](http://nvie.com/posts/a-successful-git-branching-model/)). 
+For version control, Global Innovation uses a simplified version of the famous [Gitflow Workflow](https://www.atlassian.com/git/workflows#!workflow-gitflow), (you can read the original article [here](http://nvie.com/posts/a-successful-git-branching-model/)). 
 
 Master Branch
 -------------
