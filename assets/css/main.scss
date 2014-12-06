@@ -2,28 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-// Using media queries with like this:
-// $on-palm:          600px;
-// $on-laptop:        800px;
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import "colors";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "settings",
         "foundation",
         "home",
-        "programs"
+        "programs",
+        "contact"
 ;
 
 .programs {
@@ -51,4 +38,13 @@
 	border-style: solid;
 	border-width: rem-calc(1 0 0 0);
 	border-color: #c0bbb1;
+}
+
+.content-wrapper {
+    margin-top: 35px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: $primary2;
+    font-family: 'Raleway', sans-serif;
 }

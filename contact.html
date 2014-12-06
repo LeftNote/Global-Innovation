@@ -1,7 +1,52 @@
 ---
-layout: default
+layout: non_program_default
 title: Contact
 permalink: /contact/
 ---
 
-Contact information goes here. 
+<div class="row icon-row">
+  <div class="small-3 columns">
+    <div class="text-center">
+        <i class="fa fa-building icon"></i><br>
+        
+    </div>
+    
+  </div>
+  <div class="small-3 columns">
+    <div class="text-center">
+        <i class="fa fa-phone-square icon"></i><br>
+    </div>
+  </div>
+  <div class="small-3 columns">
+    <div class="text-center">
+        <i class="fa fa-question-circle icon"></i><br>
+        
+    </div>
+  </div>
+  <div class="small-3 columns">
+    <div class="text-center">
+        <i class="fa fa-envelope icon"></i><br>
+        
+    </div>
+  </div>
+</div>
+<div class="row info-row">
+    <div class="small-3 columns text-center">
+        <span>{{ site.data.contact.address }}</span>
+    </div>
+    <div class="small-3 columns text-center">
+        {% for phone_number in site.data.contact.telephones %}
+            <span>{{ phone_number }}</span>
+        {% endfor %}
+    </div>
+    <div class="small-3 columns text-center">
+        {% for hour in site.data.contact.office_hours %}
+            <span>{{ hour }}</span>
+        {% endfor %}
+    </div>
+    <div class="small-3 columns text-center">
+        {% for email in site.data.contact.emails %}
+            <span>{{ email }}</span>
+        {% endfor %}
+    </div>
+</div>
