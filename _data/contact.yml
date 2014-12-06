@@ -1,0 +1,13 @@
+address: 
+    street: "PO Box 4400"
+    city: "Berkeley"
+    state: "CA"
+    zip: "94704"
+    country: "United States"
+telephones:
+    - "(T) 1-510-982-6898"
+    - "(T) 1-925-726-4284"
+emails:
+    - "ipcp.ucberkeley@gmail.com"
+office_hours:
+    - "9:00 AM - 5:00 PM (PST)"
