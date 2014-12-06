@@ -56,3 +56,6 @@ schedule:
   after: "*Please note this schedule is subject to change. We will finalize the program topic selection then finalize the schedule."
   before: "This is where \"before\" text goes."
   image: gip_schedule.png
+
+cover_photo: gip_cover.png
+name: Global Innovation Program

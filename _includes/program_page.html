@@ -13,57 +13,75 @@
         </dl>
     </div>
 
+    <div class="program-block">
 
-    <!-- Program introduction -->
-    <a name="intro"></a>
-    <h3 data-magellan-destination="intro">Introduction</h3>
-    <p>{{ program.introduction | markdownify }}</p>
+        <div class="program-cover" style="background-image: url(/assets/program_info/{{ program.cover_photo }})">
+            <div class="program-cover-title"><span>{{ program.name }}</span></div>
+        </div>
+        <!-- Program introduction -->
+        
+        <a name="intro" data-magellan-destination="intro"></a>
+        <div class="section even">
+            <h3><i class="fa fa-globe"></i> Introduction</h3>
+            <p>{{ program.introduction | markdownify }}</p>
+        </div>
+        
+        <!-- Program Topics -->
+        <a name="topics" data-magellan-destination="topics"></a>
+        <div class="section odd">
+            <h3><i class="fa fa-info"></i> Program Topics</h3>
+            <p>{{ program.program_topics.before }}</p>
+            <ul>
+                {% for topic in program.program_topics.topics %}
+                    <li><strong>{{ topic.name }}</strong>: {{ topic.description }}</li>
+                {% endfor %}
+            </ul>
+            <p>{{ program.program_topics.after }}</p>
+        </div>
 
-    <!-- Program Topics -->
-    <a name="topics"></a>
-    <h3 data-magellan-destination="topics">Program Topics</h3>
-    <p>{{ program.program_topics.before }}</p>
-    <ul>
-        {% for topic in program.program_topics.topics %}
-            <li><strong>{{ topic.name }}</strong>: {{ topic.description }}</li>
-        {% endfor %}
-    </ul>
-    <p>{{ program.program_topics.after }}</p>
+        <!-- Participants profile section -->
+        <a name="participants" data-magellan-destination="participants"></a>
+        <div class="section even">
+            <h3><i class="fa fa-users"></i> Participant Profiles</h3>
+            <p>{{ program.participant_profiles.before }}</p>
+            <ul>
+                {% for profile in program.participant_profiles.profiles %}
+                    <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
+                {% endfor %}
+            </ul>
+            <p>{{ program.participant_profiles.after }}</p>
+        </div>
+        <!-- Fees section -->
+        <a name="fees" data-magellan-destination="fees"></a>
+        <div class="section odd">
+            <h3><i class="fa fa-credit-card"></i> Fees</h3>
+            <p>{{ program.fees.before }}</p>
+            <p>Fee: {{ program.fees.fee }}</p>
+            <ul>
+                {% for fee_item in program.fees.items %}
+                    <li>{{ fee_item }}</li>
+                {% endfor %}
+            </ul>
+            <p>{{ program.fees.after }}</p>
+        </div>
+        <!-- Schedule section -->
+        <a name="schedule" data-magellan-destination="schedule"></a>
+        <div class="section even">
+            <h3><i class="fa fa-calendar"></i> Schedule</h3>
+            <p>{{ program.schedule.before }}</p>
+            <img src="/assets/program_info/{{ program.schedule.image }}">
+            <p>{{ program.schedule.after }}</p>
+        </div>
 
-    <!-- Participants profile section -->
-    <a name="participants"></a>
-    <h3 data-magellan-destination="participants" >Participant Profiles</h3>
-    <p>{{ program.participant_profiles.before }}</p>
-    <ul>
-        {% for profile in program.participant_profiles.profiles %}
-            <li><strong>{{ profile.name }}</strong>: {{ profile.description }}</li>
-        {% endfor %}
-    </ul>
-    <p>{{ program.participant_profiles.after }}</p>
+        <!-- Deadlines section -->
+        <a name="deadlines" data-magellan-destination="deadlines"></a>
+        <div class="section odd">
+            <h3><i class="fa fa-clock-o"></i> Deadlines</h3>
+            <p>{{ program.deadlines.before }}</p>
+            <p><strong>Application Deadline: </strong>: {{ program.deadlines.application }} </p>
+            <p><strong>Payment Deadline: </strong>: {{ program.deadlines.payment }} </p>
+            <p>{{ program.deadlines.after }}</p>
+        </div>
 
-    <!-- Fees section -->
-    <a name="fees"></a>
-    <h3 data-magellan-destination="fees">Fees</h3>
-    <p>{{ program.fees.before }}</p>
-    <p>Fee: {{ program.fees.fee }}</p>
-    <ul>
-        {% for fee_item in program.fees.items %}
-            <li>{{ fee_item }}</li>
-        {% endfor %}
-    </ul>
-    <p>{{ program.fees.after }}</p>
-
-    <!-- Schedule section -->
-    <a name="schedule"></a>
-    <h3 data-magellan-destination="schedule">Schedule</h3>
-    <p>{{ program.schedule.before }}</p>
-    <img src="/assets/program_info/{{ program.schedule.image }}">
-    <p>{{ program.schedule.after }}</p>
-
-    <a name="deadlines"></a>
-    <h3 data-magellan-destination="deadlines">Deadlines</h3>
-    <p>{{ program.deadlines.before }}</p>
-    <p><strong>Application Deadline: </strong>: {{ program.deadlines.application }} </p>
-    <p><strong>Payment Deadline: </strong>: {{ program.deadlines.payment }} </p>
-    <p>{{ program.deadlines.after }}</p>
+    </div>
 </div>

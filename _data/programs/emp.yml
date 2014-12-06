@@ -61,3 +61,7 @@ schedule:
   after: "This is where \"after\" text goes."
   before: "This is where \"before\" text goes."
   image: emp_schedule.png
+
+cover_photo: emp_cover.png
+
+name: Executive Management Program
