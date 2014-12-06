@@ -48,3 +48,16 @@ h1, h2, h3, h4, h5 {
     color: $primary2;
     font-family: 'Raleway', sans-serif;
 }
+
+footer {
+    margin-bottom: 20px !important;
+    color: $secondary2;
+    font-size: 0.8rem;
+    #footer-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 60%;
+    }
+}

@@ -1,4 +1,9 @@
-address: "PO Box 4400. Berkeley, CA 94704. United States"
+address: 
+    street: "PO Box 4400"
+    city: "Berkeley"
+    state: "CA"
+    zip: "94704"
+    country: "United States"
 telephones:
     - "(T) 1-510-982-6898"
     - "(T) 1-925-726-4284"
