@@ -27,6 +27,11 @@ a img {
 	outline: none;
 }
 
+#entrance-link {
+	text-decoration: none;
+	border: none !important;
+}
+
 .backstretch:after {
 	content: '';
     position: absolute;
