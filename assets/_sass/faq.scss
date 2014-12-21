@@ -1,0 +1,11 @@
+.faq_item {
+    padding: 20px;
+}
+
+.faq_item:nth-child(even) {
+    
+}
+
+.faq_item:nth-child(odd) {
+    background: #EDEDED;
+}
