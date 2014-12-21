@@ -30,6 +30,7 @@ a img {
 #entrance-link {
 	text-decoration: none;
 	border: none !important;
+	font-size: 200%;
 }
 
 .backstretch:after {

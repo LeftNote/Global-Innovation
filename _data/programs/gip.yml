@@ -57,5 +57,5 @@ schedule:
   before: "This is where \"before\" text goes."
   image: gip_schedule.png
 
-cover_photo: gip_cover.png
+cover_photo: gip_cover.jpg
 name: Global Innovation Program

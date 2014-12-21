@@ -34,10 +34,19 @@
 	}
 }
 
+// .side-nav {
+// 	font-family: 'Raleway', sans-serif;
+// }
+
 #side-nav-container {
 	border-style: solid;
 	border-width: rem-calc(1 0 0 0);
 	border-color: #c0bbb1;
+}
+
+.bar {
+	background-color: #ededed;
+	padding-top: 1px;
 }
 
 .content-wrapper {
