@@ -1,17 +1,14 @@
+copyright_year: 2015
+
+# DO NOT CHANGE THE VARIABLES BELOW
 # Site settings
 title: Global Innovation
-email: ipcp.ucberkeley@gmail.com
 description: > 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.gloinno.com" # the base hostname & protocol for your site
-twitter_username: 
-github_username:  
-
 # Build settings
 markdown: kramdown
-
 sass:
   style: :compressed
   sass_dir: assets/_sass
-
 exclude: [Gemfile, Gemfile.lock, README.md]
