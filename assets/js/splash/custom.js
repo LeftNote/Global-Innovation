@@ -46,7 +46,7 @@ var slideshowDuration = 4000;
 // Set videoMuted to 'false' and videos will not be muted, and the toggle mute button will be visible on the site so users can turn off audio if they want
 
 var videoBackground = 'on';
-var videoBackgroundURL = 'https://www.youtube.com/watch?v=_ar7u8_EhnE&channel=homerjwho';
+var videoBackgroundURL = 'https://www.youtube.com/watch?v=vpl5W-ZyJyw';
 var videoMuted = true;
 
 
