@@ -2,7 +2,7 @@ Global-Innovation
 =================
 
 gloinno.com
-[ ![Codeship Status for LeftNote/Global-Innovation](https://codeship.com/projects/222d6a60-5130-0132-d6bc-32ca8cb21866/status)](https://codeship.com/projects/48258)
+[ ![Codeship Status for LeftNote/Global-Innovation](https://codeship.com/projects/eaf84850-84f0-0132-ef94-6ae5548b2deb/status?branch=master)](https://codeship.com/projects/58575)
 
 Git Workflow Guideline
 ======================
