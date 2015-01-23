@@ -37,7 +37,9 @@
 						<key>isPathPopUp</key>
 						<true/>
 						<key>variableUUIDsInMenu</key>
-						<array/>
+						<array>
+							<string>51414CCE-5263-4048-8BFC-80E796EA8A87</string>
+						</array>
 					</dict>
 					<key>granularity</key>
 					<dict/>
@@ -67,7 +69,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>defaultLocation</key>
-					<string>~/Desktop</string>
+					<string>~</string>
 					<key>granularity</key>
 					<integer>1</integer>
 					<key>multipleSelection</key>
@@ -356,21 +358,43 @@ jekyll build</string>
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
-					<false/>
+					<true/>
 					<key>Types</key>
 					<array>
+						<string>com.apple.cocoa.string</string>
 						<string>com.apple.cocoa.attributed-string</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1.1</string>
+				<string>2.2.1</string>
 				<key>AMApplication</key>
 				<array>
+					<string>Finder</string>
 					<string>TextEdit</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>addMethodIndicator</key>
+					<key>checkedForDefaultEncoding</key>
+					<dict/>
+					<key>newFileFolderPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>newFileName</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Log.txt</string>
+						</array>
+					</dict>
+					<key>newFileTextEncoding</key>
+					<dict/>
+					<key>replaceExistingFiles</key>
+					<dict/>
+					<key>textFormat</key>
 					<dict/>
 				</dict>
 				<key>AMProvides</key>
@@ -379,22 +403,32 @@ jekyll build</string>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.attributed-string</string>
+						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Set Contents of TextEdit Document.action</string>
+				<string>/System/Library/Automator/New Text File.action</string>
 				<key>ActionName</key>
-				<string>Set Contents of TextEdit Document</string>
+				<string>New Text File</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>addMethodIndicator</key>
+					<key>checkedForDefaultEncoding</key>
+					<true/>
+					<key>newFileFolderPath</key>
+					<string>~/Desktop</string>
+					<key>newFileName</key>
+					<string>Log.txt</string>
+					<key>newFileTextEncoding</key>
+					<integer>4</integer>
+					<key>replaceExistingFiles</key>
+					<true/>
+					<key>textFormat</key>
 					<integer>0</integer>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.SetContentOfTextEditDocument</string>
+				<string>com.apple.Automator.NewTextFile</string>
 				<key>CFBundleVersion</key>
-				<string>1.1.1</string>
+				<string>2.2.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -404,21 +438,26 @@ jekyll build</string>
 					<string>AMCategoryText</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMSetContentsOfTextEditDocumentAction</string>
+				<string>AMNewTextFileAction</string>
 				<key>InputUUID</key>
-				<string>5EA5C5C0-C4F7-4A0D-BD4B-BB992BAC629E</string>
+				<string>906D61AC-2717-455C-B701-A6C18FA2D7FC</string>
 				<key>Keywords</key>
 				<array>
-					<string>Set</string>
+					<string>Create</string>
+					<string>Make</string>
+					<string>File</string>
 					<string>Text</string>
+					<string>Save</string>
+					<string>New</string>
 					<string>Document</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>1C69AB1D-4746-4016-B031-76B5536EA250</string>
+				<string>C8A5E116-9712-4DAC-8C67-99100A9A4126</string>
 				<key>UUID</key>
-				<string>770D25CA-4A24-4D5F-8AEC-40ABC825AE6A</string>
+				<string>52298435-0E5C-4E5A-A8B5-709F56DBA316</string>
 				<key>UnlocalizedApplications</key>
 				<array>
+					<string>Finder</string>
 					<string>TextEdit</string>
 				</array>
 				<key>arguments</key>
@@ -428,7 +467,178 @@ jekyll build</string>
 						<key>default value</key>
 						<integer>0</integer>
 						<key>name</key>
-						<string>addMethodIndicator</string>
+						<string>newFileTextEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>replaceExistingFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>newFileFolderPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>checkedForDefaultEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>Untitled.txt</string>
+						<key>name</key>
+						<string>newFileName</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>textFormat</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>309.000000:521.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Text File.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>appPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Open Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Open Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>appPath</key>
+					<string>/Applications/TextEdit.app</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.OpenFinderItems</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMOpenFinderItems</string>
+				<key>InputUUID</key>
+				<string>4E89A062-4FD0-4B2E-8E2B-DB2ADA137C75</string>
+				<key>Keywords</key>
+				<array>
+					<string>Open</string>
+					<string>Document</string>
+					<string>File</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>2A5397E3-AA4B-4111-B937-D28FA2D8E151</string>
+				<key>UUID</key>
+				<string>69112325-E690-4C24-87A8-AC5998A904BE</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>appPath</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -437,12 +647,14 @@ jekyll build</string>
 						<string>0</string>
 					</dict>
 				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:444.000000</string>
+				<string>309.000000:625.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Contents of TextEdit Document.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Open Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -450,21 +662,41 @@ jekyll build</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>43FCF895-123B-4F1D-820D-C346880B4CE3</key>
-		<dict>
-			<key>from</key>
-			<string>65E0F09A-20BB-46EE-832B-CF9B76727644 - 65E0F09A-20BB-46EE-832B-CF9B76727644</string>
-			<key>to</key>
-			<string>770D25CA-4A24-4D5F-8AEC-40ABC825AE6A - 770D25CA-4A24-4D5F-8AEC-40ABC825AE6A</string>
-		</dict>
-		<key>A85A3EAC-06A0-4978-A039-C8C1004751D8</key>
+		<key>31F89F18-F20B-49E7-A9D3-B7BA7F867647</key>
 		<dict>
 			<key>from</key>
 			<string>3387AE7C-4592-4B10-A79E-2F966D30E5BA - 3387AE7C-4592-4B10-A79E-2F966D30E5BA</string>
 			<key>to</key>
 			<string>65E0F09A-20BB-46EE-832B-CF9B76727644 - 65E0F09A-20BB-46EE-832B-CF9B76727644</string>
 		</dict>
+		<key>6A800B39-4979-43C3-A819-5BE982917F04</key>
+		<dict>
+			<key>from</key>
+			<string>52298435-0E5C-4E5A-A8B5-709F56DBA316 - 52298435-0E5C-4E5A-A8B5-709F56DBA316</string>
+			<key>to</key>
+			<string>69112325-E690-4C24-87A8-AC5998A904BE - 69112325-E690-4C24-87A8-AC5998A904BE</string>
+		</dict>
+		<key>AB47940F-BC41-4A15-89A3-A7A5B90AAC84</key>
+		<dict>
+			<key>from</key>
+			<string>65E0F09A-20BB-46EE-832B-CF9B76727644 - 65E0F09A-20BB-46EE-832B-CF9B76727644</string>
+			<key>to</key>
+			<string>52298435-0E5C-4E5A-A8B5-709F56DBA316 - 52298435-0E5C-4E5A-A8B5-709F56DBA316</string>
+		</dict>
 	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>51414CCE-5263-4048-8BFC-80E796EA8A87</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Path</string>
+			<key>name</key>
+			<string>Path</string>
+			<key>value</key>
+			<string>~/Desktop</string>
+		</dict>
+	</array>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>workflowTypeIdentifier</key>
