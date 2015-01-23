@@ -11,4 +11,4 @@ markdown: kramdown
 sass:
   style: :compressed
   sass_dir: assets/_sass
-exclude: [Gemfile, Gemfile.lock, README.md, scripts]
+exclude: [Gemfile, Gemfile.lock, README.md, scripts, deploy.py, www]
